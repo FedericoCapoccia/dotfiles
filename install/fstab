@@ -3,22 +3,23 @@
 
 # <file system> <dir> <type> <options> <dump> <pass>
 # /dev/nvme0n1p2 LABEL=Arch
-UUID=ef3455b7-5835-4e7e-b6fc-68676366ef9a	/         	btrfs     	rw,noatime,compress-force=zstd:1,ssd,discard=async,space_cache=v2,subvolid=256,subvol=/@	0 0
+UUID=509ccc30-74a9-4d30-b8e8-c5ef60e2963a	/         	btrfs     	rw,noatime,compress-force=zstd:1,ssd,discard=async,space_cache=v2,subvolid=256,subvol=/@	0 0
 
 # /dev/nvme0n1p2 LABEL=Arch
-UUID=ef3455b7-5835-4e7e-b6fc-68676366ef9a	/home     	btrfs     	rw,noatime,compress-force=zstd:1,ssd,discard=async,space_cache=v2,subvolid=257,subvol=/@home	0 0
+UUID=509ccc30-74a9-4d30-b8e8-c5ef60e2963a	/home     	btrfs     	rw,noatime,compress-force=zstd:1,ssd,discard=async,space_cache=v2,subvolid=257,subvol=/@home	0 0
 
 # /dev/nvme0n1p2 LABEL=Arch
-UUID=ef3455b7-5835-4e7e-b6fc-68676366ef9a	/var/log  	btrfs     	rw,noatime,compress-force=zstd:1,ssd,discard=async,space_cache=v2,subvolid=258,subvol=/@log	0 0
+UUID=509ccc30-74a9-4d30-b8e8-c5ef60e2963a	/var/log  	btrfs     	rw,noatime,compress-force=zstd:1,ssd,discard=async,space_cache=v2,subvolid=258,subvol=/@log	0 0
 
 # /dev/nvme0n1p2 LABEL=Arch
-UUID=ef3455b7-5835-4e7e-b6fc-68676366ef9a	/.snapshots	btrfs     	rw,noatime,compress-force=zstd:1,ssd,discard=async,space_cache=v2,subvolid=259,subvol=/@snapshots	0 0
+UUID=509ccc30-74a9-4d30-b8e8-c5ef60e2963a	/.snapshots	btrfs     	rw,noatime,compress-force=zstd:1,ssd,discard=async,space_cache=v2,subvolid=259,subvol=/@.snapshots	0 0
 
 # /dev/nvme0n1p1 LABEL=EFI
-UUID=1C35-ED4B      	/boot/efi 	vfat      	rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro	0 2
+UUID=F077-2058      	/boot/efi 	vfat      	rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro	0 2
+
+# /dev/sdc3
+UUID=96D2220CD221F0E3	/mnt/Windows	ntfs3		defaults,auto,nofail,uid=1000,gid=1000,dmask=027,fmask=137		0 0
 
 # /dev/sda1 LABEL=Data
-UUID=E76F-80D4		/mnt/Data	exfat		defaults,uid=1000,gid=1000,dmask=027,fmask=137	0 2
+UUID=E76F-80D4      	/mnt/Data 	exfat     	defaults,uid=1000,gid=1000,dmask=027,fmask=127				0 0
 
-# /dev/sdbx LABEL=Windows
-UUID=3644B49144B45579	/mnt/Windows	ntfs3		defaults,auto,nofail,uid=1000,gid=1000,dmask=027,fmask=137	0 2
