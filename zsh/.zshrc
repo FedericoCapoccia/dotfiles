@@ -7,10 +7,6 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-if command -v wal > /dev/null 2>&1 && [ "$TERM" = "alacritty" ]; then
-    wal -Rqe
-fi
-
 # Options
 setopt autocd
 setopt HIST_SAVE_NO_DUPS
