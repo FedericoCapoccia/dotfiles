@@ -7,6 +7,10 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+if command -v wal > /dev/null 2>&1 && [ "$TERM" = "alacritty" ]; then
+    wal -Rqe
+fi
+
 # Options
 setopt autocd
 setopt HIST_SAVE_NO_DUPS
@@ -28,11 +32,7 @@ alias gitacp='git add --all && git commit -m '.' && git push'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 alias .....='cd ../../../..'
-alias wallpaper='swww img $HOME/dotfiles/wallpaper/default.png'
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f $ZSH/custom/.p10k.zsh ]] || source $ZSH/custom/.p10k.zsh
-
-source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f $ZDOTDIR/.p10k.zsh ]] || source $ZDOTDIR/.p10k.zsh
+source $ZDOTDIR/powerlevel10k/powerlevel10k.zsh-theme
