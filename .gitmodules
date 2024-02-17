@@ -6,3 +6,6 @@
 	path = nvim
 	url = git@github.com:EzBl4ck/nvim.git
 	branch = main
+[submodule "zsh/powerlevel10k"]
+	path = zsh/powerlevel10k
+	url = https://github.com/romkatv/powerlevel10k.git
