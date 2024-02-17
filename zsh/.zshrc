@@ -11,8 +11,9 @@ fi
 setopt autocd
 setopt HIST_SAVE_NO_DUPS
 
-autoload -U compinit; compinit
+fpath=(${ASDF_DIR}/completions $fpath)
 fpath=($ZDOTDIR/plugins/zsh-completions/src $fpath)
+autoload -U compinit; compinit
 
 # Aliases
 alias c='clear && fastfetch'
@@ -32,3 +33,4 @@ alias .....='cd ../../../..'
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f $ZDOTDIR/.p10k.zsh ]] || source $ZDOTDIR/.p10k.zsh
 source $ZDOTDIR/powerlevel10k/powerlevel10k.zsh-theme
+. "$ZDOTDIR/.asdf/asdf.sh"
