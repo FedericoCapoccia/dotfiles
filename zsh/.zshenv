@@ -13,7 +13,7 @@ export ZDOTDIR="$DOTFILES/zsh/"
 
 export EDITOR="nvim"
 export VISUAL="nvim"
-export JAVA_HOME=$(dirname $(dirname $(readlink $(readlink $(which javac)))))
+#export JAVA_HOME=$(dirname $(dirname $(readlink $(readlink $(which javac)))))
 
 export HISTFILE="$ZDOTDIR/.zhistory"
 export HISTSIZE=10000
