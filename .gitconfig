@@ -1,3 +1,5 @@
 [user]
 	email = federico@git.com
 	name = Federico Capoccia
+[core]
+	autocrlf = input
