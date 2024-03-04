@@ -1,4 +1,4 @@
-#fastfetch
+fastfetch
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
@@ -15,9 +15,15 @@ fpath=(${ASDF_DIR}/completions $fpath)
 fpath=($ZDOTDIR/plugins/zsh-completions/src $fpath)
 autoload -U compinit; compinit
 
+zstyle ':completion:*' menu select
+zstyle ':completion:*' use-cache on
+zstyle ':completion:*' cache-path ~/.zsh/cache
+
+source $ZDOTDIR/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+
 # Aliases
 #alias c='clear && fastfetch'
-alias c='clear'
+alias c='clear && fastfetch'
 alias ip='ip -color=auto'
 alias ls='ls --color=auto'
 alias l='ls -l'
