@@ -9,3 +9,6 @@
 [submodule "zsh/powerlevel10k"]
 	path = zsh/powerlevel10k
 	url = https://github.com/romkatv/powerlevel10k.git
+[submodule "/home/fede/dotfiles/zsh/plugins/zsh-autosuggestions"]
+	path = /home/fede/dotfiles/zsh/plugins/zsh-autosuggestions
+	url = https://github.com/zsh-users/zsh-autosuggestions
