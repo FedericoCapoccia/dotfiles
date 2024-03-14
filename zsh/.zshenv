@@ -7,6 +7,7 @@ typeset -U path PATH
 path=(~/.cargo/bin $path)
 path=(~/.dotnet/tools $path)
 path=(~/.local/bin/ $path)
+path=(~/.local/share/JwtBrains/Toolbox/scripts $path)
 export PATH
 
 export DOTFILES="$HOME/dotfiles/"
