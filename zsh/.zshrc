@@ -23,6 +23,7 @@ source $ZDOTDIR/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Aliases
 #alias c='clear && fastfetch'
+alias vim='nvim'
 alias c='clear && fastfetch'
 alias ip='ip -color=auto'
 alias ls='ls --color=auto'
@@ -37,6 +38,8 @@ alias ...='cd ../..'
 alias ....='cd ../../..'
 alias .....='cd ../../../..'
 alias update\-ca\-certificates='update-ca-trust'
+alias devstart='docker start postgres && systemctl start sonarqube.service'
+alias devstop='docker stop postgres && systemctl stop sonarqube.service'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f $ZDOTDIR/.p10k.zsh ]] || source $ZDOTDIR/.p10k.zsh
