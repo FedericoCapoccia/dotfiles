@@ -1,8 +1,0 @@
-Proper Theme Switching based on wallpaper with pywal
-  -wallpaper switcher that wipes the wal/ cache so it can bu rebuilt
-  -CAMBIARE IL CONFIg wal in wal/wal  così da cancellare il config prima di fare il pc -r
-  -Quando keybind per cambiare wallpaper deve anche cancellare cache /wal poi generare con colors.sh e poi deve hyprctl reload (opzionale anche poter cambiare da rofi e associare lo script)
-Waybar config
-Logout manager
-install script 
-dir cleaning
