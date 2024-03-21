@@ -1,0 +1,26 @@
+fastfetch
+
+# Options
+setopt autocd
+setopt HIST_SAVE_NO_DUPS
+
+autoload -U compinit; compinit
+_comp_options+=(globdots) # With hidden files
+source $ZDOTDIR/completion.zsh
+
+# Aliases
+alias c='clear && fastfetch'
+alias vim='nvim'
+alias c='clear && fastfetch'
+alias ip='ip -color=auto'
+alias ls='ls --color=auto'
+alias l='ls -l'
+alias ll='ls -lahF'
+alias lls='ls -lahFtr'
+alias la='ls -A'
+alias lc='ls -CF'
+alias gitacp='git add --all && git commit -m '.' && git push'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
+
