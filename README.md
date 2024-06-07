@@ -20,22 +20,22 @@ pacman -S stow
 Clone the repository into your $HOME directory
 
 ```
-git clone git@github.com:FedericoCapoccia/dotfiles.git && cd dotfiles
+$ git clone git@github.com:FedericoCapoccia/dotfiles.git && cd dotfiles
 ```
 or
 ```
-git clone https://github.com/FedericoCapoccia/dotfiles.git && cd dotfiles
+$ git clone https://github.com/FedericoCapoccia/dotfiles.git && cd dotfiles
 ```
 
 After that pull in the submodules
 
 ```
-git submodule init
-git submodule update
+$ git submodule init
+$ git submodule update
 ```
 
-Finally stow the files
+Finally use stow to create symlinks
 
 ```
-stow .
+$ stow .
 ```
