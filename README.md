@@ -39,3 +39,4 @@ Finally use stow to create symlinks
 ```
 $ stow .
 ```
+
