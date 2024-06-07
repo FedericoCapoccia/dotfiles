@@ -1,0 +1,78 @@
+# partition "BOOT" 1G
+mkfs.fat -F 32 -n BOOT ${/dev/}
+
+# partition "ArchLinux" 100%
+mkfs.ext4 -L ArchLinux ${/dev/}
+
+# Enable parallel downloads in /etc/pacman.conf
+# Initial packages
+pacstrap -K /mnt base base-devel linux linux-firmware linux-headers neovim git openssh amd-ucode xdg-user-dirs
+
+# fstab with UUID
+gen-fstab -U /mnt >> /mnt/etc/fstab
+
+# chroot
+arch-chroot /mnt
+
+# Timezone
+ln -sf /usr/share/zoneInfo/Europe/Rome /etc/localtime
+
+# Sync hwclock
+hwclock --systohc
+
+# Locales
+# Edit /etc/locale.gen
+locale-gen
+
+# Edit /etc/locale.conf
+# LANG=en_US.UTF-8
+# LANGUAGE=en_US
+# LC_TIME=it_IT.UTF-8
+# LC_MONETARY=it_IT.UTF-8
+# LC_NUMERIC=it_IT.UTF-8
+# LC_PAPER=it_IT.UTF-8
+# LC_NAME=it_IT.UTF-8
+# LC_ADDRESS=it_IT.UTF-8
+# LC_TELEPHONE=it_IT.UTF-8
+# LC_MEASUREMENT=it_IT.UTF-8
+# LC_IDENTIFICATION=it_IT.UTF-8
+
+# Enable parallel downloads in /etc/pacman.conf
+# Setup HostName in /etc/hostname
+
+# Edit font to /etc/vconsole.conf
+FONT=ter-i32b
+
+# Remove fallback preset from /etc/mkinitcpio.d/*.preset
+# Generate initramfs
+mkinitcpio -P
+
+# Enable wheel in sudoers
+# Configure xdg-user-dirs /etc/xdg/user-dirs.defaults
+
+# Install bootloader
+bootctl install
+
+# Edit /boot/loader/loader.conf
+default arch.conf
+timeout 0
+console-mode max
+
+# Edit /boot/loader/entries/arch.conf
+title Arch Linux
+linux /vmlinuz-linux
+initrd /initramfs-linux.img
+options root=UUID=${blkid.UUID} rw loglevel=3 nowatchdog amdgpu.ppfeaturemask=0xffffffff
+
+# Enable NetworkManager
+systemctl enable NetworkManager
+
+# Edit /etc/xdg/reflector/reflector.conf
+--save /etc/pacman.d/mirrorlist
+--protocol https
+--country Italy,France,Germany
+--latest 5
+--sort rate
+
+# Enable reflector for mirrorlist refresh
+systemctl enable reflector.service
