@@ -22,6 +22,6 @@ alias ip='ip -color=auto'
 alias ls='ls --color=auto'
 alias l='ls -l'
 alias ll='ls -lahF'
-alias gitacp='git add --all && git commit -m '$(curl -s https://whatthecommit.com/index.txt)' && git push'
+alias gitacp='git add --all && git commit -m "$(curl -s https://whatthecommit.com/index.txt)" && git push'
 
 [[ ! -f ~/dotfiles/zsh/.p10k.zsh ]] || source ~/dotfiles/zsh/.p10k.zsh
