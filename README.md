@@ -21,6 +21,9 @@ Clone the repository into your $HOME directory
 
 ```
 git clone git@github.com:FedericoCapoccia/dotfiles.git && cd dotfiles
+```
+or
+```
 git clone https://github.com/FedericoCapoccia/dotfiles.git && cd dotfiles
 ```
 
