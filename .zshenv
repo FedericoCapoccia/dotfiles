@@ -18,8 +18,7 @@ export DOTNET_CLI_TELEMETRY_OPTOUT=1
 
 #export QT_QPA_PLATFORMTHEME=qt6ct
 #export QT_QPA_PLATFORM=wayland
-#export GTK_BACKEND=wayland
-#export GTK_USE_PORTAL=1
+export GTK_USE_PORTAL=1
 
 # AMDGPU
 export RADV_TEX_ANISO=16
