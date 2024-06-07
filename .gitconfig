@@ -1,0 +1,7 @@
+[user]
+	email = federico.capoccia@proton.me
+	name = Federico Capoccia
+[core]
+	autocrlf = input
+[init]
+	defaultBranch = master
