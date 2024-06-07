@@ -7,16 +7,13 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-
+# OH-MY-ZSH
 CASE_SENSITIVE="true"
 zstyle ':omz:update' mode reminder
 HIST_STAMPS="dd/mm/yyyy"
-
-# OH-MY-ZSH
-#plugins=(git docker-compose zsh-autosuggestions dotnet)
-#export ZSH=$ZDOTDIR/oh-my-zsh
-#ZSH_THEME="powerlevel10k/powerlevel10k"
-#source $ZSH/oh-my-zsh.sh
+plugins=(git zsh-autosuggestions)
+ZSH_THEME="powerlevel10k/powerlevel10k"
+source $ZSH/oh-my-zsh.sh
 
 # Aliases
 alias die='poweroff'

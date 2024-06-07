@@ -6,6 +6,7 @@ export XDG_STATE_HOME="$HOME/.local/state"
 
 # ZSH
 export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
+export ZSH="$ZDOTDIR/oh-my-zsh"
 export ZSH_COMPDUMP="$XDG_CACHE_HOME/.zcompdump-$HOST"
 export HISTFILE="$XDG_STATE_HOME/zsh/.zhistory"
 export HISTSIZE=10000
