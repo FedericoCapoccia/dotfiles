@@ -67,6 +67,8 @@ for_window [class = "^steam$" title="^Screenshot Uploader$"] floating enable
 for_window [class = "^steam$" title="^Steam Guard - Computer Authorization Required$"] floating enable
 for_window [class = "^steam$" title="^Steam Keyboard$"] floating enable
 
+for_window [app_id = "^Thunar$" title="^File Operation Progress$"] floating enable
+
 ### Key bindings
     bindsym $mod+t exec $term
     bindsym $mod+b exec $browser
