@@ -3,16 +3,11 @@ if [ -z "${WAYLAND_DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
   sway
 fi
 
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
-
 # OH-MY-ZSH
 CASE_SENSITIVE="true"
 zstyle ':omz:update' mode reminder
 HIST_STAMPS="dd/mm/yyyy"
 plugins=(git zsh-autosuggestions)
-ZSH_THEME="powerlevel10k/powerlevel10k"
 source $ZSH/oh-my-zsh.sh
 
 # Aliases
@@ -24,4 +19,4 @@ alias l='ls -l'
 alias ll='ls -lahF'
 alias gitacp='git add --all && git commit -m "$(curl -s https://whatthecommit.com/index.txt)" && git push'
 
-[[ ! -f "${ZDOTDIR}/.p10k.zsh" ]] || source "${ZDOTDIR}/.p10k.zsh"
+eval "$(oh-my-posh init zsh --config $ZDOTDIR/ohmyposh/zen.toml)"
