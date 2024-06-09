@@ -5,3 +5,5 @@
 	autocrlf = input
 [init]
 	defaultBranch = master
+[safe]
+	directory = /var/www/html

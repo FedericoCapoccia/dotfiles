@@ -3,6 +3,10 @@ if [ -z "${WAYLAND_DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
   sway
 fi
 
+if [ -n "$SSH_CLIENT" ]; then
+  export TERM=xterm
+fi
+
 # OH-MY-ZSH
 CASE_SENSITIVE="true"
 zstyle ':omz:update' mode reminder
