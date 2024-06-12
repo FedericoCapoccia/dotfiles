@@ -1,4 +1,5 @@
 .git
+.packages.txt
 .gitmodules
-installation.txt
+.installation.txt
 ^/README.*
