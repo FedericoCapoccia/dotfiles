@@ -28,7 +28,7 @@ output * bg ~/wallpaper/blackhole-field.png fill
 input * {
     xkb_layout us,us
     xkb_variant alt-intl,
-    xkb_options grp:sclk_toggle
+    xkb_options grp:rctrl_toggle
     repeat_rate 30
     repeat_delay 300
     
