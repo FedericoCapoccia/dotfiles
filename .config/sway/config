@@ -8,7 +8,7 @@ exec waybar
 exec dunst
 exec corectrl
 #exec nm-applet
-#exec easyeffects
+exec easyeffects
 
 ### Variables
 set $mod Mod4
@@ -22,7 +22,6 @@ set $browser brave
 set $files Thunar
 
 output * mode 2560x1440@144Hz position 0 0
-#output * bg ~/dotfiles/wallpaper/background.png fill
 output * bg ~/wallpaper/blackhole-field.png fill
 
 input * {
