@@ -67,6 +67,7 @@ for_window [class = "^steam$" title="^Steam Guard - Computer Authorization Requi
 for_window [class = "^steam$" title="^Steam Keyboard$"] floating enable
 
 for_window [app_id = "^Thunar$" title="^File Operation Progress$"] floating enable
+for_window [app_id = "^org\.pulseaudio\.pavucontrol$"] floating enable
 
 ### Key bindings
     bindsym $mod+t exec $term
