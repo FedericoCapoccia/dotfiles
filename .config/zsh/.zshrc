@@ -1,6 +1,7 @@
 if [ -z "${WAYLAND_DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
-  export XDG_CURRENT_DESKTOP=sway
-  sway
+  #export XDG_CURRENT_DESKTOP=sway
+  #sway
+  Hyprland
 fi
 
 if [ -n "$SSH_CLIENT" ]; then
