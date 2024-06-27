@@ -1,7 +1,6 @@
 
 #exec
 exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
-exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
 exec autotiling
 exec wl-paste --watch cliphist store
 exec waybar
@@ -156,5 +155,5 @@ mode "resize" {
 }
 bindsym $mod+r mode "resize"
 
-
+exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
 include @sysconfdir@/sway/config.d/*
