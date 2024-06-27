@@ -1,5 +1,6 @@
 [Default Applications]
 inode/directory=thunar.desktop
+x-scheme-handler/jetbrains=jetbrains-toolbox.desktop
 
 [Added Associations]
 inode/directory=nvim.desktop;
