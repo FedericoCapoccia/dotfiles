@@ -8,7 +8,7 @@
 
   "modules-left": [
     "custom/launcher",
-    "sway/workspaces"
+    "hyprland/workspaces"
   ],
 
   "modules-center": [
@@ -22,7 +22,7 @@
     "tray"
   ],
 
-  "sway/workspaces": {
+  "hyprland/workspaces": {
     "disable-scroll": true,
     "persistent-workspaces": {
       "1": [],

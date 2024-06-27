@@ -13,35 +13,39 @@ window#waybar {
 }
 
 #clock, #cpu, #memory, #pulseaudio, #tray {
-	padding: 0 0.75rem;
+    padding: 0 0.75rem;
 }
 
 #workspaces {
-	padding: 0px;
-	margin: 0px;
+    padding: 0px;
+    margin: 0px;
     color: grey;
 }
 
 #workspaces button {
-	padding: 0 2px;
-	margin: 0px;
-	background: transparent;
-	font-weight: bold;
+    padding: 0 2px;
+    margin: 0px;
+    background: transparent;
+    font-weight: bold;
     color: grey;
 }
 #workspaces button:hover {
-	box-shadow: inherit;
-	text-shadow: inherit;
+    box-shadow: inherit;
+    text-shadow: inherit;
 }
 
 #workspaces button.focused {
-	color: white;
+    color: white;
+}
+
+#workspaces button.active {
+    color: white;
 }
 
 #custom-launcher {
-  font-size: 20px;
-  margin-right: 8px;
-  margin-left: 15px;
+    font-size: 20px;
+    margin-right: 8px;
+    margin-left: 15px;
 }
 
 #tray {
