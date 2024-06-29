@@ -15,9 +15,9 @@ set $left h
 set $down j
 set $up k
 set $right l
-set $term kitty
+set $term wezterm
 set $menu dmenu_path | wofi --show drun -a --allow-images | xargs swaymsg exec --
-set $browser brave
+set $browser firefox
 set $files Thunar
 
 output * mode 2560x1440@144Hz position 0 0
