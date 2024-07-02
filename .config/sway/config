@@ -78,6 +78,7 @@ for_window [class = "^steam$" title="^Steam Keyboard$"] floating enable
 
 for_window [app_id = "^Thunar$" title="^File Operation Progress$"] floating enable
 for_window [app_id = "^org\.pulseaudio\.pavucontrol$"] floating enable
+for_window [app_id = "^com\.saivert\.pwvucontrol$"] floating enable
 
 ### Key bindings
     bindsym $mod+t exec $term
@@ -109,9 +110,9 @@ for_window [app_id = "^org\.pulseaudio\.pavucontrol$"] floating enable
     bindsym $mod+Shift+Up move up
     bindsym $mod+Shift+Right move right
 
-    bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
-    bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
-    bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
+    bindsym XF86AudioRaiseVolume exec wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+ -l 1
+    bindsym XF86AudioLowerVolume exec wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-
+    bindsym XF86AudioMute exec wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
     bindsym XF86AudioPlay exec playerctl play-pause
     bindsym XF86AudioNext exec playerctl next
     bindsym XF86AudioPrev exec playerctl previous
