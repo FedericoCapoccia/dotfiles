@@ -61,6 +61,17 @@
         <td>/.btrfsroot</td>
         <td></td>
     </tr>
+    <tr>
+        <td>@home/fede/Media/Games</td>
+        <td>/home/fede/Media/Games</td>
+        <td>Y</td>
+    </tr>
+    <tr>
+        <td>@home/fede/.cache</td>
+        <td>/home/fede/.cache</td>
+        <td>Y</td>
+    </tr>
+
 </table>
 Mount Options <br>
 
@@ -198,6 +209,7 @@ zsh
 # AUR
 autotiling
 hyprpicker
+protontricks
 ttf-ms-fonts
 ```
 ```
