@@ -1,144 +1,43 @@
-amd-ucode 20240510.b9d2bf23-1
-autotiling 1.9.2-2
-base 3-2
-base-devel 1-1
-brave-bin 1:1.66.118-1
-breeze-gtk 6.0.5-1
-cliphist 1:0.5.0-1
-cmake 3.29.5-2
-corectrl 1.4.1-1
-dunst 1.11.0-1
-easyeffects 7.1.6-2
-fastfetch 2.15.0-1
-fd 10.1.0-1
-ffmpeg 2:6.1.1-7
-filezilla 3.67.0-1
-fontconfig 2:2.15.0-2
-git 2.45.2-1
-gnome-disk-utility 46.0-1
-go 2:1.22.4-1
-goverlay 1.1.1-2
-grim 1.4.1-1
-gtk4 1:4.14.4-1
-gvfs 1.54.1-1
-jdk17-openjdk 17.0.11.u9-1
-jdk21-openjdk 21.0.3.u9-1
-jdk8-openjdk 8.412.u08-1
-jetbrains-toolbox 2.3.2.31487-1
-kitty 0.35.1-1
-lib32-fontconfig 2:2.15.0-1
-lib32-gamemode 1.8.1-1
-lib32-libva-mesa-driver 1:24.1.1-1
-lib32-mangohud 0.7.2-1
-lib32-mesa 1:24.1.1-1
-lib32-mesa-vdpau 1:24.1.1-1
-lib32-pipewire 1:1.0.7-1
-lib32-vulkan-radeon 1:24.1.1-1
-libdeep_filter_ladspa-bin 0.5.6-1
-libva-mesa-driver 1:24.1.1-1
-linux 6.9.3.arch1-1
-linux-firmware 20240510.b9d2bf23-1
-linux-headers 6.9.3.arch1-1
-man-db 2.12.1-1
-mesa 1:24.1.1-1
-mesa-vdpau 1:24.1.1-1
-neovim 0.10.0-4
-networkmanager 1.48.0-1
-npm 10.8.1-1
-nwg-look 0.2.7-1
-oh-my-posh-bin 21.5.0-1
-openssh 9.7p1-2
-p7zip 1:17.05-2
-papirus-icon-theme 20240501-1
-paru 2.0.3-1
-paru-debug 2.0.3-1
-pavucontrol 1:6.0-1
-pipewire-alsa 1:1.0.7-2
-pipewire-pulse 1:1.0.7-2
-polkit-gnome 0.105-10
-prismlauncher 8.3-1
-protontricks-git 1.11.1.r6.gf75d57b-1
-protonup-qt 2.9.2-1
-qt5-wayland 5.15.14+kde+r58-1
-qt5ct 1.8-1
-qt6-wayland 6.7.1-1
-qt6ct 0.9-8
-reflector 2023-2
-ripgrep 14.1.0-1
-rustup 1.27.1-1
-spotify 1:1.2.37.701-1
-steam 1.0.0.79-2
-stow 2.4.0-1
-sway 1:1.9-3
-sway-contrib 1.9.0-1
-swaybg 1.2.1-1
-terminus-font 4.49.1-6
-thunar 4.18.10-2
-thunar-archive-plugin 0.5.2-1
-thunar-volman 4.18.0-1
-tldr 3.2.0-3
-tree 2.1.1-1
-ttf-jetbrains-mono-nerd 3.2.1-2
-ttf-liberation 2.1.5-1
-ttf-ubuntu-mono-nerd 3.2.1-2
-ttf-ubuntu-nerd 3.2.1-2
-tumbler 4.18.2-1
-unrar 1:7.0.9-1
-unzip 6.0-21
-upd72020x-fw 1:1.0.0-2
-vesktop 1.5.2-5
-vulkan-radeon 1:24.1.1-1
-waybar 0.10.3-1
-wget 1.24.5-2
-wofi 1.4.1-1
-xdg-desktop-portal 1.18.4-1
-xdg-desktop-portal-gtk 1.15.1-2
-xdg-desktop-portal-wlr 0.7.0-2
-xdg-user-dirs 0.18-1
-xorg-xwayland 24.1.0-1
-zip 3.0-11
-zsh 5.9-5
-
-##############################################################
-
 amd-ucode
 autotiling
 base
 base-devel
-breeze-gtk
+btop
 btrfs-progs
 clang
 cliphist
 cmake
 corectrl
+curl
+dnsmasq
 docker
 docker-compose
 efibootmgr
 fastfetch
 fd
+firewalld
 flatpak
+fzf
 game-devices-udev
 git
 gnome-software
-gnome-themes-extra
 go
-gparted
 grim
 grub
+gtk-engine-murrine
+gtk4
+hyprpicker
+imv
+iptables-nft
 jdk21-openjdk
 jetbrains-toolbox
-lib32-libva-mesa-driver
-lib32-mesa
-lib32-mesa-utils
-lib32-mesa-vdpau
-lib32-vulkan-radeon
 libva-mesa-driver
 linux
 linux-firmware
 linux-headers
-lxqt-policykit
 man-db
 materia-gtk-theme
+mesa
 mesa-utils
 mesa-vdpau
 neovim
@@ -149,14 +48,22 @@ oh-my-posh-bin
 openssh
 os-prober
 papirus-icon-theme
+paru
+paru-debug
+pavucontrol
+pipewire
 pipewire-alsa
+pipewire-audio
+pipewire-jack
 pipewire-pulse
 polkit-gnome
+qemu-full
 qt5-wayland
 qt6-wayland
 reflector
 ripgrep
-sassc
+rustup
+slurp
 stow
 sway
 sway-contrib
@@ -174,16 +81,16 @@ ttf-nerd-fonts-symbols-mono
 ttf-ubuntu-mono-nerd
 ttf-ubuntu-nerd
 unzip
+virt-manager
 vulkan-radeon
 waybar
 wezterm
 wget
+wl-clipboard
 wofi
 xdg-desktop-portal-gtk
 xdg-desktop-portal-wlr
 xdg-user-dirs
 xorg-xwayland
-yay
-yay-debug
 zip
 zsh
