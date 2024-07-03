@@ -15,6 +15,7 @@ docker-compose
 efibootmgr
 fastfetch
 fd
+firefox
 firewalld
 flatpak
 fzf
@@ -31,6 +32,11 @@ imv
 iptables-nft
 jdk21-openjdk
 jetbrains-toolbox
+lib32-libva-mesa-driver
+lib32-mesa
+lib32-mesa-utils
+lib32-mesa-vdpau
+lib32-vulkan-radeon
 libva-mesa-driver
 linux
 linux-firmware
@@ -76,10 +82,13 @@ thunar-archive-plugin
 thunar-volman
 tldr
 tree
+ttf-dejavu
 ttf-jetbrains-mono-nerd
+ttf-ms-fonts
 ttf-nerd-fonts-symbols-mono
 ttf-ubuntu-mono-nerd
 ttf-ubuntu-nerd
+tumbler
 unzip
 virt-manager
 vulkan-radeon
