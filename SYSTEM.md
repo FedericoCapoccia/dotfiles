@@ -278,5 +278,8 @@ qemu-full
 ```
 Firefox
 Flatseal
+PrismLauncher
+ProtonPlus
+Steam
 Vesktop
 ```
