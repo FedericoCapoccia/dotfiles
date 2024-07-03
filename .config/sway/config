@@ -3,7 +3,6 @@
 
 set $gnome-schema org.gnome.desktop.interface
 exec_always {
-    #gsettings set $gnome-schema gtk-theme 'Breeze-Dark'
     #gsettings set $gnome-schema gtk-theme 'Materia-dark'
     gsettings set $gnome-schema gtk-theme 'Material-DeepOcean-B'
     gsettings set $gnome-schema icon-theme 'Papirus-Dark'
@@ -13,7 +12,6 @@ exec_always {
 }
 
 exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
-#exec lxqt-policykit-agent
 exec autotiling
 exec wl-paste --watch cliphist store
 exec waybar
@@ -29,12 +27,12 @@ set $down j
 set $up k
 set $right l
 set $term wezterm
-set $menu dmenu_path | wofi --show drun -a --allow-images | xargs swaymsg exec --
+set $menu wofi --show drun --allow-images -a
 set $browser flatpak run org.mozilla.firefox
 set $files Thunar
 
 output * mode 2560x1440@144Hz position 0 0
-output * bg ~/wallpaper/blackhole-field.png fill
+output * bg ~/wallpaper/paesaggio_blu.png fill
 
 input * {
     xkb_layout us,us

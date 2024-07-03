@@ -1,3 +1,7 @@
+-- Btrfs subvolume Layout
+
+
+
 # partition "BOOT" 1G
 mkfs.fat -F 32 -n BOOT ${/dev/}
 
@@ -76,3 +80,11 @@ systemctl enable NetworkManager
 
 # Enable reflector for mirrorlist refresh
 systemctl enable reflector.service
+
+
+https://wiki.archlinux.org/title/docker
+https://wiki.archlinux.org/title/Libvirt
+https://wiki.archlinux.org/title/QEMU
+https://wiki.archlinux.org/title/firewalld
+https://wiki.archlinux.org/title/getty
+
