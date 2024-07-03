@@ -198,15 +198,22 @@ zsh
 # AUR
 autotiling
 hyprpicker
+ttf-ms-fonts
 ```
 ```
 cliphist
 corectrl
+firefox
 flatpak
 gnome-software
 grim
 gtk-engine-murrine
 gtk4
+lib32-libva-mesa-driver
+lib32-mesa
+lib32-mesa-utils
+lib32-mesa-vdpau
+lib32-vulkan-radeon
 libva-mesa-driver
 mesa
 mesa-utils
@@ -231,10 +238,12 @@ swaync
 thunar
 thunar-archive-plugin
 thunar-volman
+ttf-dejavu
 ttf-jetbrains-mono-nerd
 ttf-nerd-fonts-symbols-mono
 ttf-ubuntu-mono-nerd
 ttf-ubuntu-nerd
+tumbler
 vulkan-radeon
 waybar
 wezterm

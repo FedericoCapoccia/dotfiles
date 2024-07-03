@@ -31,7 +31,7 @@ set $browser firefox
 set $files Thunar
 
 output * mode 2560x1440@144Hz position 0 0
-output * bg ~/wallpaper/paesaggio_blu.png fill
+output * bg ~/wallpaper/default.png fill
 
 input * {
     xkb_layout us,us
