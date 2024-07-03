@@ -11,13 +11,14 @@ exec_always {
 }
 
 exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
-exec autotiling
+exec autotiling --limit 2
 exec wl-paste --watch cliphist store
 exec waybar
 exec dunst
 exec corectrl
 #exec nm-applet
 exec easyeffects
+exec blueman-manager
 
 ### Variables
 set $mod Mod4

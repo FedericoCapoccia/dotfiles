@@ -173,6 +173,9 @@ polkit.addRule(function(action, subject) {
 amd-ucode
 base
 base-devel
+blueman
+bluez
+bluez-utils
 btop
 btrfs-progs
 curl
