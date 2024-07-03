@@ -69,7 +69,7 @@
   },
 
   "pulseaudio": {
-    "on-click": "flatpak run com.saivert.pwvucontrol",
+    "on-click": "pavucontrol",
     "format": "{icon} {volume}%",
     "format-muted": " ",
     "format-icons": {
