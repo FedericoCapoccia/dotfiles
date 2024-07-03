@@ -250,6 +250,7 @@ xorg-xwayland
 # AUR
 # If Steam is in flatpak
 game-devices-udev
+jetbrains-toolbox
 oh-my-posh-bin
 ```
 ```
@@ -258,7 +259,6 @@ cmake
 fzf
 go
 jdk21-openjdk
-jetbrains-toolbox
 materia-gtk-theme
 npm
 ripgrep
@@ -274,7 +274,9 @@ docker-compose
 virt-manager
 qemu-full
 ```
-### Headless extra
+### Flatpak
 ```
-
+Firefox
+Flatseal
+Vesktop
 ```
