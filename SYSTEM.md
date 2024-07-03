@@ -141,6 +141,21 @@ VIDEOS=Media/Videos
 xdg-user-dirs-update
 ```
 
+## Corectrl
+```
+# /etc/polkit-1/rules.d/90-corectrl.rules
+polkit.addRule(function(action, subject) {
+    if ((action.id == "org.corectrl.helper.init" ||
+         action.id == "org.corectrl.helperkiller.init") &&
+        subject.local == true &&
+        subject.active == true &&
+        subject.isInGroup("your-user-group")) {
+            return polkit.Result.YES;
+    }
+});
+```
+
+
 ## Packages
 ### Headless minimal
 ```
