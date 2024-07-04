@@ -22,3 +22,5 @@ export GTK_USE_PORTAL=1
 
 # AMDGPU
 export RADV_TEX_ANISO=16
+
+export EDITOR=nvim

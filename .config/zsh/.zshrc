@@ -23,5 +23,16 @@ alias ls='ls --color=auto'
 alias l='ls -l'
 alias ll='ls -lahF'
 alias gitacp='git add --all && git commit -m "$(curl -s https://whatthecommit.com/index.txt)" && git push'
+alias yeet='paru -Rns'
 
 eval "$(oh-my-posh init zsh --config $ZDOTDIR/ohmyposh/zen.toml)"
+
+# Yazi
+function yy() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
+	yazi "$@" --cwd-file="$tmp"
+	if cwd="$(cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+		cd -- "$cwd"
+	fi
+	rm -f -- "$tmp"
+}
