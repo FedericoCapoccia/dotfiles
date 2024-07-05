@@ -24,6 +24,8 @@ alias l='ls -l'
 alias ll='ls -lahF'
 alias gitacp='git add --all && git commit -m "$(curl -s https://whatthecommit.com/index.txt)" && git push'
 alias yeet='paru -Rns'
+alias up='nix flake update ~/nixos && sudo nixos-rebuild switch --flake ~/nixos'
+alias hup='nix flake update ~/nixos && home-manager switch --flake ~/nixos'
 
 eval "$(oh-my-posh init zsh --config $ZDOTDIR/ohmyposh/zen.toml)"
 

@@ -1,4 +1,5 @@
 .git
+nixos
 SYSTEM.md
 .packages.txt
 .gitmodules
