@@ -11,7 +11,7 @@ fi
 CASE_SENSITIVE="true"
 zstyle ':omz:update' mode reminder
 HIST_STAMPS="dd/mm/yyyy"
-plugins=(git zsh-autosuggestions zsh-syntax-highlightning)
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
 
 mkdir -p $XDG_DATA_HOME/zsh
