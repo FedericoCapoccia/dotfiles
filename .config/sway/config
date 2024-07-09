@@ -25,7 +25,7 @@ set $mod Mod4
 set $term wezterm
 set $menu wofi --show drun --allow-images -a
 set $browser flatpak run org.mozilla.firefox
-set $files Thunar
+set $files nemo
 set $left h
 set $down j
 set $up k
