@@ -4,3 +4,6 @@
 [submodule "zsh-autosuggestions"]
 	path = .config/zsh/custom/plugins/zsh-autosuggestions
 	url = https://github.com/zsh-users/zsh-autosuggestions
+[submodule "zsh-syntax-highlightning"]
+	path = .config/zsh/custom/plugins/zsh-syntax-highlightning
+	url = https://github.com/zsh-users/zsh-syntax-highlightning

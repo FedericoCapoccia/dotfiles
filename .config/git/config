@@ -1,7 +1,5 @@
 [user]
 	email = 166076838+FedericoCapoccia@users.noreply.github.com
 	name = Federico Capoccia
-[core]
-	autocrlf = input
 [init]
 	defaultBranch = master

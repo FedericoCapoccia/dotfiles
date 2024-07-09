@@ -1,7 +1,6 @@
 if [ -z "${WAYLAND_DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
   export XDG_CURRENT_DESKTOP=sway
-  sway
-  #Hyprland
+  exec sway
 fi
 
 if [ -n "$SSH_CLIENT" ]; then
@@ -12,8 +11,10 @@ fi
 CASE_SENSITIVE="true"
 zstyle ':omz:update' mode reminder
 HIST_STAMPS="dd/mm/yyyy"
-plugins=(git zsh-autosuggestions)
+plugins=(git zsh-autosuggestions zsh-syntax-highlightning)
 source $ZSH/oh-my-zsh.sh
+
+mkdir -p $XDG_DATA_HOME/zsh
 
 # Aliases
 alias die='poweroff'
@@ -23,11 +24,9 @@ alias ls='ls --color=auto'
 alias l='ls -l'
 alias ll='ls -lahF'
 alias gitacp='git add --all && git commit -m "$(curl -s https://whatthecommit.com/index.txt)" && git push'
-alias yeet='paru -Rns'
-alias up='nix flake update ~/nixos && sudo nixos-rebuild switch --flake ~/nixos'
-alias hup='nix flake update ~/nixos && home-manager switch --flake ~/nixos'
+alias inv='nvim $(fzf -m --preview="bat --color=always {}")'
 
-eval "$(oh-my-posh init zsh --config $ZDOTDIR/ohmyposh/zen.toml)"
+eval "$(oh-my-posh init zsh --config $XDG_CONFIG_HOME/ohmyposh/zen.toml)"
 
 # Yazi
 function yy() {
