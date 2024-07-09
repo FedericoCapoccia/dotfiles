@@ -16,10 +16,6 @@ export SAVEHIST=10000
 # Dotnet
 export DOTNET_CLI_TELEMETRY_OPTOUT=1
 
-#export QT_QPA_PLATFORMTHEME=qt5ct
-#export QT_QPA_PLATFORM=wayland
-#export GTK_USE_PORTAL=1
-
 # AMDGPU
 export RADV_TEX_ANISO=16
 

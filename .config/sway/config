@@ -10,11 +10,12 @@ exec_always {
 }
 
 #exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+exec /usr/libexec/polkit-gnome-authentication-agent-1
 exec autotiling --limit 2
 exec wl-paste --watch clipman store --no-persist
-#exec waybar
+exec waybar
 #exec dunst
-#exec corectrl
+exec corectrl
 #exec nm-applet
 #exec easyeffects
 #exec blueman-applet
@@ -163,6 +164,4 @@ mode "resize" {
     bindsym Escape mode "default"
 }
 
-include /etc/sway/config.d/*
-#exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
-exec_always systemctl --user start sway-session.target
+include $XDG_CONFIG_HOME/sway/config.d/*

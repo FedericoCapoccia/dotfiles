@@ -1,8 +1,3 @@
-if [ -z "${WAYLAND_DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
-  #export XDG_CURRENT_DESKTOP=sway
-  exec sway
-fi
-
 if [ -n "$SSH_CLIENT" ]; then
   export TERM=xterm
 fi
