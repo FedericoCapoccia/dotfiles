@@ -4,6 +4,7 @@ local config = {}
 config.font = wezterm.font 'JetBrainsMono NF Medium'
 --config.color_scheme = 'MaterialDarker'
 config.window_close_confirmation = 'NeverPrompt'
+config.warn_about_missing_glyphs = false
 
 config.keys = {
     {

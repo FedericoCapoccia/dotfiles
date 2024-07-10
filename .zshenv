@@ -15,10 +15,11 @@ export SAVEHIST=10000
 
 # Dotnet
 export DOTNET_CLI_TELEMETRY_OPTOUT=1
+export ASPNETCORE_Kestrel__Certificates__Default__Password="password"
+export SPNETCORE_Kestrel__Certificates__Default__Path="/home/fede/.certs/localhost.pfx"
 
 # AMDGPU
 export RADV_TEX_ANISO=16
-
 export EDITOR=nvim
 
 # cargo
