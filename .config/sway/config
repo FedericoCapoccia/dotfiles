@@ -1,36 +1,23 @@
-#exec
-
-#set $gnome-schema org.gnome.desktop.interface
-#exec_always {
-#    gsettings set $gnome-schema gtk-theme 'Materia-dark'
-#    gsettings set $gnome-schema icon-theme 'Papirus-Dark'
-#    gsettings set $gnome-schema cursor-theme 'Adwaita'
-#    gsettings set $gnome-schema font-name 'Ubuntu Nerd Font 12'
-#    gsettings set $gnome-schema color-scheme 'prefer-dark'
-#}
-
-#exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
-exec /usr/libexec/polkit-gnome-authentication-agent-1
-exec autotiling --limit 2
-exec wl-paste --watch clipman store --no-persist
-exec waybar
-exec swaync
-#exec dunst
-exec corectrl
-#exec nm-applet
-#exec easyeffects
-#exec blueman-applet
-
 ### Variables
 set $mod Mod4
 set $term wezterm
-set $menu wofi --show drun --allow-images -a
-set $browser flatpak run org.mozilla.firefox
+set $menu wofi --show drun --allow-images -a -i
+set $browser firefox
 set $files nemo
-set $left h
-set $down j
+
 set $up k
+set $down j
 set $right l
+set $left h
+
+exec /usr/libexec/polkit-gnome-authentication-agent-1
+exec autotiling --limit 2
+exec corectrl
+exec wl-paste --watch clipman store --no-persist
+exec waybar
+exec swaync
+exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK XDG_CURRENT_DESKTOP
+exec hash dbus-update-activation-environment 2>/dev/null && dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK XDG_CURRENT_DESKTOP
 
 output * {
   mode 2560x1440@144Hz position 0 0
