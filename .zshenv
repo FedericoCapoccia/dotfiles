@@ -16,6 +16,8 @@ export SAVEHIST=10000
 # Dotnet
 export DOTNET_CLI_TELEMETRY_OPTOUT=1
 
-# AMDGPU
-export RADV_TEX_ANISO=16
 export EDITOR=nvim
+
+if [ -f "$HOME/.cargo/env" ]; then 
+	. "$HOME/.cargo/env"
+fi
