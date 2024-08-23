@@ -20,6 +20,9 @@ export DOTNET_CLI_TELEMETRY_OPTOUT=1
 export RADV_TEX_ANISO=16
 export EDITOR=nvim
 
+export XCURSOR_THEME="Bibata-Modern-Classic"
+export XCURSOR_SIZE=20
+
 export PATH="$PATH:/home/fede/.local/bin"
 
 if [ -f "$HOME/.cargo/env" ]; then 
