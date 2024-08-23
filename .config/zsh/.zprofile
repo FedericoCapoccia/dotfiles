@@ -1,4 +1,4 @@
-export WINDOW_MANAGER=sway # sway, hyprland, i3
+export WINDOW_MANAGER=hypr # sway, hyprland, i3
 
 # Sway
 if [[ "$WINDOW_MANAGER" == "sway" ]] && [ -z "$WAYLAND_DISPLAY" ] && [ "$XDG_VTNR" -eq 1 ]; then
@@ -9,3 +9,6 @@ if [[ "$WINDOW_MANAGER" == "sway" ]] && [ -z "$WAYLAND_DISPLAY" ] && [ "$XDG_VTN
   exec sway
 fi
 
+
+# Created by `pipx` on 2024-08-23 17:22:13
+export PATH="$PATH:/home/fede/.local/bin"
