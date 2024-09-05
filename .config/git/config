@@ -3,3 +3,5 @@
 	name = Federico Capoccia
 [init]
 	defaultBranch = master
+[core]
+	autocrlf = input
