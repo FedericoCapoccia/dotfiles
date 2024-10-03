@@ -17,11 +17,13 @@ export SAVEHIST=10000
 export DOTNET_CLI_TELEMETRY_OPTOUT=1
 
 # AMDGPU
-export RADV_TEX_ANISO=16
+# export RADV_TEX_ANISO=16
 export EDITOR=nvim
 
-#export XCURSOR_THEME="Bibata-Modern-Classic"
-#export XCURSOR_SIZE=20
+export XCURSOR_THEME="Bibata-Modern-Classic"
+export XCURSOR_SIZE=20
+gsettings set org.gnome.desktop.interface cursor-theme "Bibata-Modern-Classic"
+gsettings set org.gnome.desktop.interface cursor-size 20
 
 export PATH="$PATH:/home/fede/.local/bin"
 
