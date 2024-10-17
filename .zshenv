@@ -19,6 +19,8 @@ export DOTNET_CLI_TELEMETRY_OPTOUT=1
 # AMDGPU
 # export RADV_TEX_ANISO=16
 export EDITOR=nvim
+export CXX=clang++
+export CC=clang
 
 export XCURSOR_THEME="Bibata-Modern-Classic"
 export XCURSOR_SIZE=20
