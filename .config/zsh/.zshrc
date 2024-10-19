@@ -35,5 +35,5 @@ function yy() {
   rm -f -- "$tmp"
 }
 
-# gsettings set org.cinnamon.desktop.default-applications.terminal exec open-wezterm-here
+gsettings set org.cinnamon.desktop.default-applications.terminal exec open-wezterm-here
 

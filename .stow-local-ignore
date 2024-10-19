@@ -6,11 +6,6 @@ SYSTEM.md
 .installation.txt
 ^/README.*
 
-.config/hypr
 .config/kitty
-.config/Kvantum
-.config/qt5ct
-.config/qt6ct
 .config/sway
 .config/Thunar
-.config/waybar
