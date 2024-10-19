@@ -6,6 +6,4 @@ SYSTEM.md
 .installation.txt
 ^/README.*
 
-.config/kitty
-.config/sway
 .config/Thunar

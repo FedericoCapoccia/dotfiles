@@ -4,12 +4,12 @@
   "margin-top": 5,
   "margin-right": 5,
   "margin-left": 5,
-  "height": 36,
+  "height": 20,
 
-  "modules-left": [
-    "custom/launcher"
+  //"modules-left": [
+    //"custom/launcher"
 //    "hyprland/workspaces"
-  ],
+  //],
 
   "modules-center": [
     "clock"

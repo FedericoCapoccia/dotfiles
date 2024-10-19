@@ -1,4 +1,4 @@
-export WINDOW_MANAGER=hyprland # sway, hyprland, i3
+export WINDOW_MANAGER=sway # sway, hyprland, i3
 
 # Sway
 if [[ "$WINDOW_MANAGER" == "sway" ]] && [ -z "$WAYLAND_DISPLAY" ] && [ "$XDG_VTNR" -eq 1 ]; then

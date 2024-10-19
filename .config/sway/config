@@ -1,6 +1,6 @@
 ### Variables
 set $mod Mod4
-set $term wezterm
+set $term kitty
 set $menu wofi --show drun --allow-images -a -i
 set $browser firefox
 set $files nemo
@@ -10,7 +10,8 @@ set $down j
 set $right l
 set $left h
 
-exec /usr/libexec/polkit-gnome-authentication-agent-1
+exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+# exec /usr/libexec/polkit-gnome-authentication-agent-1
 exec autotiling --limit 2
 exec corectrl
 exec wl-paste --watch clipman store --no-persist
@@ -19,10 +20,25 @@ exec swaync
 exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK XDG_CURRENT_DESKTOP
 exec hash dbus-update-activation-environment 2>/dev/null && dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK XDG_CURRENT_DESKTOP
 
-output * {
-  mode 2560x1440@144Hz position 0 0
+set $gnome-schema org.gnome.desktop.interface
+exec gsettings set $gnome-schema gtk-theme 'Materia-dark'
+exec gsettings set $gnome-schema icon-theme 'Papirus-Dark'
+exec gsettings set $gnome-schema cursor-theme 'Bibata-Modern-Classic'
+exec gsettings set $gnome-schema cursor-size 20
+exec gsettings set $gnome-schema font-name 'Ubuntu Nerd Font 12'
+exec gsettings set $gnome-schema color-scheme 'prefer-dark'
+seat seat0 xcursor_theme 'Bibata-Modern-Classic' 20
+
+output DP-1 {
+  mode 2560x1440@144Hz position 1920 0
+  bg ~/wallpaper/default.png fill
+  scale 1.25
+}
+output DP-2 {
+  mode 1920x1080@144Hz position 0 0
   bg ~/wallpaper/default.png fill
 }
+
 
 input * {
     accel_profile flat
@@ -111,26 +127,26 @@ bindsym {
   $mod+Shift+Left move left
 
   #---Workspaces---#
-  $mod+1 workspace number 1
-  $mod+2 workspace number 2
-  $mod+3 workspace number 3
-  $mod+4 workspace number 4
-  $mod+5 workspace number 5
-  $mod+6 workspace number 6
-  $mod+7 workspace number 7
-  $mod+8 workspace number 8
-  $mod+9 workspace number 9
-  $mod+0 workspace number 10
-  $mod+Shift+1 move container to workspace number 1
-  $mod+Shift+2 move container to workspace number 2
-  $mod+Shift+3 move container to workspace number 3 
-  $mod+Shift+4 move container to workspace number 4
-  $mod+Shift+5 move container to workspace number 5
-  $mod+Shift+6 move container to workspace number 6
-  $mod+Shift+7 move container to workspace number 7
-  $mod+Shift+8 move container to workspace number 8
-  $mod+Shift+9 move container to workspace number 9
-  $mod+Shift+0 move container to workspace number 10
+  # $mod+1 workspace number 1
+  # $mod+2 workspace number 2
+  # $mod+3 workspace number 3
+  # $mod+4 workspace number 4
+  # $mod+5 workspace number 5
+  # $mod+6 workspace number 6
+  # $mod+7 workspace number 7
+  # $mod+8 workspace number 8
+  # $mod+9 workspace number 9
+  # $mod+0 workspace number 10
+  # $mod+Shift+1 move container to workspace number 1
+  # $mod+Shift+2 move container to workspace number 2
+  # $mod+Shift+3 move container to workspace number 3 
+  # $mod+Shift+4 move container to workspace number 4
+  # $mod+Shift+5 move container to workspace number 5
+  # $mod+Shift+6 move container to workspace number 6
+  # $mod+Shift+7 move container to workspace number 7
+  # $mod+Shift+8 move container to workspace number 8
+  # $mod+Shift+9 move container to workspace number 9
+  # $mod+Shift+0 move container to workspace number 10
 
   #---Media--#
   XF86AudioRaiseVolume exec wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+ -l 1
