@@ -20,6 +20,7 @@ final_space = true
     style = 'plain'
 
     [blocks.segments.properties]
+      cache_duration = 'none'
       style = 'full'
 
   [[blocks.segments]]
@@ -31,6 +32,7 @@ final_space = true
 
     [blocks.segments.properties]
       branch_icon = ''
+      cache_duration = 'none'
       commit_icon = '@'
       fetch_status = true
 
@@ -46,6 +48,7 @@ final_space = true
     style = 'plain'
 
     [blocks.segments.properties]
+      cache_duration = 'none'
       threshold = 5000
 
 [[blocks]]
@@ -59,3 +62,6 @@ final_space = true
     type = 'text'
     style = 'plain'
     foreground_templates = ['{{if gt .Code 0}}red{{end}}', '{{if eq .Code 0}}green{{end}}']
+
+    [blocks.segments.properties]
+      cache_duration = 'none'
