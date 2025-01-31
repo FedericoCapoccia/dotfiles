@@ -24,8 +24,8 @@ export CC=clang
 
 export XCURSOR_THEME="Bibata-Modern-Classic"
 export XCURSOR_SIZE=20
-gsettings set org.gnome.desktop.interface cursor-theme "Bibata-Modern-Classic"
-gsettings set org.gnome.desktop.interface cursor-size 20
+#gsettings set org.gnome.desktop.interface cursor-theme "Bibata-Modern-Classic"
+#gsettings set org.gnome.desktop.interface cursor-size 20
 
 export PATH="$PATH:/home/fede/.local/bin"
 
