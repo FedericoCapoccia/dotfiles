@@ -25,7 +25,7 @@ export CC=clang
 export XCURSOR_THEME="Bibata-Modern-Classic"
 export XCURSOR_SIZE=20
 
-if [[ "$WINDOW_MANAGER" == "sway" ]]
+if [[ "$WINDOW_MANAGER" == "sway" ]]; then
     gsettings set org.gnome.desktop.interface cursor-theme "Bibata-Modern-Classic"
     gsettings set org.gnome.desktop.interface cursor-size 20
 fi

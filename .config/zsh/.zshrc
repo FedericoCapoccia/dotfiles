@@ -35,6 +35,6 @@ function yy() {
   rm -f -- "$tmp"
 }
 
-if [[ "$WINDOW_MANAGER" == "sway" ]]
+if [[ "$WINDOW_MANAGER" == "sway" ]]; then
     gsettings set org.cinnamon.desktop.default-applications.terminal exec open-wezterm-here
 fi
