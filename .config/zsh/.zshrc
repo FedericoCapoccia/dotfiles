@@ -23,7 +23,6 @@ alias gitacp='git add --all && git commit -m "$(curl -s https://whatthecommit.co
 alias inv='nvim $(fzf -m --preview="bat --color=always {}")'
 
 eval "$(oh-my-posh init zsh --config $XDG_CONFIG_HOME/ohmyposh/zen.toml)"
-#source /usr/share/fzf/shell/key-bindings.zsh
 
 # Yazi
 function yy() {
@@ -34,7 +33,3 @@ function yy() {
   fi
   rm -f -- "$tmp"
 }
-
-if [[ "$WINDOW_MANAGER" == "sway" ]]; then
-    gsettings set org.cinnamon.desktop.default-applications.terminal exec open-wezterm-here
-fi

@@ -15,20 +15,9 @@ export SAVEHIST=10000
 
 # Dotnet
 export DOTNET_CLI_TELEMETRY_OPTOUT=1
-
-# AMDGPU
-# export RADV_TEX_ANISO=16
 export EDITOR=nvim
 export CXX=clang++
 export CC=clang
-
-export XCURSOR_THEME="Bibata-Modern-Classic"
-export XCURSOR_SIZE=20
-
-if [[ "$WINDOW_MANAGER" == "sway" ]]; then
-    gsettings set org.gnome.desktop.interface cursor-theme "Bibata-Modern-Classic"
-    gsettings set org.gnome.desktop.interface cursor-size 20
-fi
 
 export PATH="$PATH:/home/fede/.local/bin"
 
