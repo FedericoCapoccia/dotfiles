@@ -18,6 +18,7 @@ export DOTNET_CLI_TELEMETRY_OPTOUT=1
 export EDITOR=nvim
 export CXX=clang++
 export CC=clang
+export QT_USE_PHYSICAL_DPI=1
 
 export PATH="$PATH:/home/fede/.local/bin"
 
