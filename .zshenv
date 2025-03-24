@@ -21,8 +21,8 @@ export CC=clang
 export QT_USE_PHYSICAL_DPI=1
 export VCPKG_ROOT="$HOME/.local/share/vcpkg"
 
-export PATH="$PATH:/home/fede/.local/bin"
-export PATH="$PATH:/home/fede/.cargo/bin"
+export PATH="$PATH:$HOME/.local/bin"
+export PATH="$PATH:$HOME/.cargo/bin"
 
 if [ -f "$HOME/.cargo/env" ]; then 
 	. "$HOME/.cargo/env"
