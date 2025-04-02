@@ -15,11 +15,16 @@ export SAVEHIST=10000
 
 # Dotnet
 export DOTNET_CLI_TELEMETRY_OPTOUT=1
+
 export EDITOR=nvim
 export CXX=clang++
 export CC=clang
 export QT_USE_PHYSICAL_DPI=1
 export VCPKG_ROOT="$HOME/.local/share/vcpkg"
+
+if [ -f "$HOME/.local/share/vulkan_sdk/1.4.309.0/setup-env.sh" ]; then
+        . "$HOME/.local/share/vulkan_sdk/1.4.309.0/setup-env.sh"
+fi
 
 export PATH="$PATH:$HOME/.local/bin"
 export PATH="$PATH:$HOME/.cargo/bin"
