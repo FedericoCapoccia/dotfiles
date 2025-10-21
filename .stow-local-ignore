@@ -1,9 +1,4 @@
 .git
-nixos
 SYSTEM.md
-.packages.txt
 .gitmodules
-.installation.txt
 ^/README.*
-
-.config/Thunar
