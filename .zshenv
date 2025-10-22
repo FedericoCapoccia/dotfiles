@@ -29,6 +29,6 @@ if [ -f "$HOME/.cargo/env" ]; then
 	. "$HOME/.cargo/env"
 fi
 
-if [-f "$HOME/.zvm/bin"]; then
+if [ -d "$HOME/.zvm/bin" ]; then
     export PATH="$PATH:$HOME/.zvm/bin"
 fi
