@@ -20,6 +20,9 @@ alias l='ls -l'
 alias ll='ls -lahF'
 alias gitacp='git add --all && git commit -m "$(curl -s https://whatthecommit.com/index.txt)" && git push'
 
+# Added to fix AlmaOS vps 'unknown terminal type error'
+alias ssh="kitty +kitten ssh"
+
 eval "$(oh-my-posh init zsh --config $XDG_CONFIG_HOME/ohmyposh/zen.toml)"
 
 # Yazi
