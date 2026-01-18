@@ -36,7 +36,6 @@ window#waybar.hidden {
     margin: 3px 5px;    /* Reduced margin slightly */
     border-radius: 6px;
     color: @foreground;
-    background-color: #000;
     transition: all 0.3s ease-in-out;
     font-size: 13px;  /* Slightly smaller font size */
 }
@@ -54,12 +53,7 @@ window#waybar.hidden {
     background-color: #eb4d4b;
 }
 
-#workspaces {
-    background-color: #000;
-    border-radius: 14px;
-    padding: 3px 6px;  /* Adjusted padding to reduce height */
-}
-
+#workspaces,
 #tray,
 #clock,
 #cpu,
@@ -70,7 +64,7 @@ window#waybar.hidden {
 #custom-power,
 #custom-screenshot_t,
 #custom-spotify {
-    background-color: #000;
+    background-color: transparent;
     border-radius: 14px;
     padding: 6px;  /* Adjusted padding */
 }

@@ -53,12 +53,12 @@ output * {
 
 output DP-2 {
     mode 2560x1440@240Hz position 1920 0
-#bg ~/wallpaper/default.png fill
+    bg ~/wallpapers/default.png fill
 }
 
 output DP-3 {
     mode 1920x1080@144Hz position 0 100
-#bg ~/wallpaper/default.png fill
+    bg ~/wallpapers/default.png fill
 }
 
 ##################################
