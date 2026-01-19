@@ -35,14 +35,14 @@ exec waybar
 exec swaync
 exec nm-applet
 
-# set $gnome-schema org.gnome.desktop.interface
-# exec gsettings set $gnome-schema gtk-theme 'Materia-dark'
-# exec gsettings set $gnome-schema icon-theme 'Papirus-Dark'
-# exec gsettings set $gnome-schema cursor-theme 'Bibata-Modern-Classic'
-# exec gsettings set $gnome-schema cursor-size 20
-# exec gsettings set $gnome-schema font-name 'Ubuntu Nerd Font 12'
-# exec gsettings set $gnome-schema color-scheme 'prefer-dark'
-# seat seat0 xcursor_theme 'Bibata-Modern-Classic' 20
+set $gnome-schema org.gnome.desktop.interface
+exec gsettings set $gnome-schema gtk-theme 'Materia-dark'
+exec gsettings set $gnome-schema icon-theme 'Papirus-Dark'
+exec gsettings set $gnome-schema cursor-theme 'Bibata-Modern-Classic'
+exec gsettings set $gnome-schema cursor-size 20
+exec gsettings set $gnome-schema font-name 'Ubuntu Nerd Font 12'
+exec gsettings set $gnome-schema color-scheme 'prefer-dark'
+seat seat0 xcursor_theme 'Bibata-Modern-Classic' 20
 
 ##################################
 # Monitor
