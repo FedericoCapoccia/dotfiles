@@ -33,6 +33,7 @@ exec swaymsg focus output DP-2
 exec wl-paste --watch clipman store --no-persist
 exec waybar
 exec swaync
+exec nm-applet
 
 # set $gnome-schema org.gnome.desktop.interface
 # exec gsettings set $gnome-schema gtk-theme 'Materia-dark'
