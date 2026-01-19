@@ -56,7 +56,7 @@ output DP-2 {
     mode 2560x1440@240Hz position 1920 0
     bg ~/wallpapers/default.png fill
     render_bit_depth 10
-    color_profile icc ~/Documents/ColorProfiles/aoc_agon_pro_ag276qzd2.icm
+    color_profile icc /usr/share/color/icc/colord/aoc_agon_pro_ag276qzd2.icm
 }
 
 output DP-3 {
