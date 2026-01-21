@@ -20,4 +20,3 @@ end
 
 # Git prompt stuff
 set -gx __fish_git_prompt_showdirtystate true
-
