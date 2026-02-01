@@ -86,6 +86,7 @@ gaps outer 10
 default_border none
 default_floating_border none
 floating_modifier $mod normal
+focus_follows_mouse no
 
 # Useful config from gentoo wiki
 for_window [window_role = "pop-up"] floating enable
