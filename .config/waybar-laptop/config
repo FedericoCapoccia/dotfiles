@@ -24,7 +24,7 @@
     "modules-right": [
         "custom/storage",
         "memory",
-        "cpu",
+//        "cpu",
         "wireplumber",
         "backlight",
         "battery",
