@@ -13,6 +13,8 @@ set -gx SSH_AUTH_SOCK "$XDG_RUNTIME_DIR/gcr/ssh"
 fish_add_path "$HOME/.local/bin"
 fish_add_path "$HOME/.cargo/bin"
 fish_add_path "$HOME/.zvm/bin"
+fish_add_path "$HOME/.bun/bin"
+fish_add_path "$HOME/.local/share/bob/nvim-bin"
 
 if test -n "$SSH_CLIENT"
     set -gx TERM xterm
@@ -20,7 +22,3 @@ end
 
 # Git prompt stuff
 set -gx __fish_git_prompt_showdirtystate true
-
-# bun
-set --export BUN_INSTALL "$HOME/.bun"
-set --export PATH $BUN_INSTALL/bin $PATH
