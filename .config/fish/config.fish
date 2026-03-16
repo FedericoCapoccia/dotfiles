@@ -20,3 +20,7 @@ end
 
 # Git prompt stuff
 set -gx __fish_git_prompt_showdirtystate true
+
+# bun
+set --export BUN_INSTALL "$HOME/.bun"
+set --export PATH $BUN_INSTALL/bin $PATH
