@@ -7,7 +7,6 @@ set -gx XDG_STATE_HOME "$HOME/.local/state"
 # Other env
 set -gx DOTNET_CLI_TELEMETRY_OPTOUT "1"
 set -gx EDITOR "nvim"
-set -gx SSH_AUTH_SOCK "$XDG_RUNTIME_DIR/gcr/ssh"
 
 # PATH
 fish_add_path "$HOME/.local/bin"
